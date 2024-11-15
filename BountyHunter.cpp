@@ -49,7 +49,7 @@ int main() {
                 cin >> eyeColor;
                 cout << "Enter Build: ";
                 cin >> build;
-                cout << "Entet any Body Mark: ";
+                cout << "Enter any Body Mark: ";
                 cin >> bodyMark;
                 cout << "Enter City: ";
                 cin >> city;
