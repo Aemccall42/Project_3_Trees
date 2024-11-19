@@ -36,4 +36,11 @@ Thursday, November 7th:
 
 
 
+Final Files: 7
+    BountyHunter.cpp
+    Tree.h (condensed)
+    Bounty.cpp, Bounty.h
+    bounties.txt (text file to read from)
+    makefile
+    TESTCASE.txt
 

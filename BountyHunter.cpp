@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Tree.h"
+#include "Bounty.h"
 
 using namespace std;
 
@@ -40,6 +41,8 @@ int main() {
                 string build;
                 string city; 
                 string bodyMark;
+                //should add if they are a high threat level
+                //Wanted level(int 1-5(no unit)) or Bounty amount (How much money to reward for capture of criminal float $1.00-$1,000,000.00) to sort from 
 
                 cout << "Enter Name: ";
                 cin >> name;
@@ -79,7 +82,7 @@ int main() {
                 break;
             }
             case 4:
-                cout << "Thank You for choosing Bounty Hunt! " << endl;
+                cout << "Thank You for playing Bounty Hunt! " << endl;
                 cout << "Have a nice day!!!!" << endl;
                 break;            
                 
