@@ -8,25 +8,25 @@ using namespace std;
 class Tree
 {
     private:
-        struct treeNode
+        struct TreeNode
         {
             Bounty value;
-            treeNode* left;
-            treeNode* right;
+            TreeNode* left;
+            TreeNode* right;
         };
 
-        treeNode *root;
+        TreeNode *root;
         int numNodes;
 
-        void insert(treeNode *&, treeNode *&);
-        void destroySubTree(treeNode *);
-        void deleteNode(Bounty, treeNode *&);
-        void makeDeletion(treeNode *&);
-        void saveToFile(treeNode *) const;
-        void fullDisplayInOrder(treeNode *) const;
-        void displayInOrder(treeNode *) const;
-        void displayPreOrder(treeNode *) const;
-		void displayPostOrder(treeNode *) const;
+        void insert(TreeNode *&, TreeNode *&);
+        void destroySubTree(TreeNode *);
+        void deleteNode(Bounty, TreeNode *&);
+        void makeDeletion(TreeNode *&);
+        void saveToFile(TreeNode *) const;
+        void fullDisplayInOrder(TreeNode *) const;
+        void displayInOrder(TreeNode *) const;
+        void displayPreOrder(TreeNode *) const;
+		void displayPostOrder(TreeNode *) const;
 
     public:
         //Constructor
@@ -84,7 +84,7 @@ class Tree
 
 };
 /*
-void Tree::insert(treeNode *&nodePtr, treeNode *&newNode) //insert node and search branches
+void Tree::insert(TreeNode *&nodePtr, TreeNode *&newNode) //insert node and search branches
 {
     if(nodePtr == NULL)
     {
@@ -102,7 +102,7 @@ void Tree::insert(treeNode *&nodePtr, treeNode *&newNode) //insert node and sear
 
 void Tree::insertNode(Bounty newBounty)
 {
-    treeNode *newNode = NULL;
+    TreeNode *newNode = NULL;
 
     if(this->searchNode(newBounty))
     {
@@ -110,7 +110,7 @@ void Tree::insertNode(Bounty newBounty)
     }
     else
     {
-        newNode =new treeNode;
+        newNode =new TreeNode;
     }
 }
 
