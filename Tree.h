@@ -83,7 +83,7 @@ class Tree
         }
 
 };
-
+/*
 void Tree::insert(treeNode *&nodePtr, treeNode *&newNode) //insert node and search branches
 {
     if(nodePtr == NULL)
@@ -116,7 +116,7 @@ void Tree::insertNode(Bounty newBounty)
 
 
 //left off here
-
+*/
 
 
 #endif
