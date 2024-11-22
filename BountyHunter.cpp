@@ -17,11 +17,12 @@ cout << " ######   ####   ####  #    #   #     #    #     # ###### #    #    #\n
 }
 
 void displayMenu() {
+    cout << "\n\nWelcome Bounty Hunter! \nReady to start?\n\n";
     cout << "1. Add Bounty\n";
     cout << "2. Display Bounties\n";
     cout << "3. Search for Bounty\n";
     cout << "4. Exit\n";
-    cout << "Choose an option: ";
+    cout << "\nChoose an option: ";
 }
 
 int main() {
@@ -58,12 +59,13 @@ int main() {
                 // Create a new bounty and insert it into the tree
                 Bounty newBounty(name, age, eyeColor, build, bodyMark, city);
                 bountyTree.insert(newBounty);
-                cout << "Bounty added!" << endl;
+                cout << "Bounty added!\n\n" << endl;
                 break;
             }
             case 2:                            //Display Bounties
                 cout << "Displaying all bounties:\n";
                 bountyTree.displayInOrder(); // Display all bounties in-order
+                cout << endl << endl;
                 break;
             
             case 3: {                           //Search for Bounty
@@ -74,16 +76,17 @@ int main() {
                 // Search for the bounty
                 TreeNode* result = bountyTree.search(name);
                 if (result) {
-                    cout << "Bounty found: " << result->data << endl; // Display found bounty
+                    cout << "Bounty found: \n" << result->data << endl << endl; // Display found bounty
                 } else {
-                    cout << "Bounty not found." << endl; // Handle not found case
+                    cout << "Bounty not found.\n" << endl << endl; // Handle not found case
                 }
                 break;
             }
 
             case 4:
                 cout << "Thank You for choosing Bounty Hunt! " << endl;
-                cout << "Have a nice day!!!!" << endl;
+                cout << "Have a nice day!!!!\n\n" << endl;
+                cout << "__________________________________________________________________\n";
                 break;            
                 
              default:

@@ -30,12 +30,12 @@ bool Bounty::operator==(const Bounty& other) const {
 
 // Friend function for outputting the bounty information
 ostream& operator<<(ostream& os, const Bounty& bounty) {
-    os << "Name: "  << bounty.name 
-       << ", Age: " << bounty.age 
-       << ", Eye Color: " << bounty.eyeColor 
-       << ", Build: " << bounty.build
-       << ", Body Mark: " << bounty.bodyMark
-       << ", City: " << bounty.city;
+    os << "\nName: "  << bounty.name 
+       << "\nAge: " << bounty.age 
+       << "\nEye Color: " << bounty.eyeColor 
+       << "\nBuild: " << bounty.build
+       << "\nBody Mark: " << bounty.bodyMark
+       << "\nCity: " << bounty.city;
     return os;
 }
 
