@@ -45,25 +45,18 @@ int main() {
                 string bodyMark;
 
                 cout << "Enter Name: ";
-                //cin >> name;
-                cin.ignore();
-                getline(cin, name);
+                cin >> name;
                 cout << "Enter Age: ";
                 cin >> age;
                 cout << "Enter Eye Color: ";
                 cin >> eyeColor;
                 cout << "Enter Build: ";
-                //cin >> build;
-                cin.ignore();
-                getline(cin, build);
+                cin >> build;
                 cout << "Enter any Body Mark: ";
-                //cin >> bodyMark;
-                cin.ignore();
-                getline(cin, name);
+                cin >> bodyMark;
                 cout << "Enter City: ";
-                //cin >> city;
-                cin.ignore();
-                getline(cin, name);
+                cin >> city;
+                
 
                 // Create a new bounty and insert it into the tree
                 Bounty newBounty(name, age, eyeColor, build, bodyMark, city);
@@ -79,9 +72,7 @@ int main() {
             case 3: {                           //Search for Bounty
                 string name;
                 cout << "Enter Name to Search: ";
-                cin.ignore();
-                getline(cin, name);
-                //cin >> name;
+                cin >> name;
 
                 // Search for the bounty
                 TreeNode* result = bountyTree.search(name);

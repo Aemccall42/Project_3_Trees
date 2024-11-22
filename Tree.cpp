@@ -43,15 +43,6 @@ void Tree::insert(const Bounty& bounty) {
 }
 
 // In-order traversal to display bounties
-/*void Tree::inOrder(TreeNode* node) const {
-    if (node) {
-        inOrder(node->left); // Recur left
-        cout << node->data << endl; // Display the data
-        inOrder(node->right); // Recur right
-    }
-}
-*/
-
 void Tree::inOrder(TreeNode* node) const {
     if (node) {
         inOrder(node->left); // Recur left

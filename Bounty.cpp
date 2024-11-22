@@ -29,25 +29,17 @@ bool Bounty::operator==(const Bounty& other) const {
 }
 
 // Friend function for outputting the bounty information
-/*ostream& operator<<(ostream& os, const Bounty& bounty) {
-    os << "Name: "  << bounty.name 
-       << ", Age: " << bounty.age 
-       << ", Eye Color: " << bounty.eyeColor 
-       << ", Build: " << bounty.build
-       << ", Body Mark: " << bounty.bodyMark
-       << ", City: " << bounty.city;
-    return os;
-}
-*/
 ostream& operator<<(ostream& os, const Bounty& bounty) {
-    os   << "\n\nName: \n"  << bounty.name;
-    os   << "Age: \n" << bounty.age;
-    os   << "Eye Color: \n" << bounty.eyeColor;
-    os   << "Build: \n" << bounty.build;
-    os   << "Body Mark: \n" << bounty.bodyMark;
-    os   << "City: \n" << bounty.city;
+    os << "\n Name: "  << bounty.name 
+       << "\n Age: " << bounty.age 
+       << "\n Eye Color: " << bounty.eyeColor 
+       << "\n Build: " << bounty.build
+       << "\n Body Mark: " << bounty.bodyMark
+       << "\n City: " << bounty.city;
     return os;
 }
+
+
 
 
 
