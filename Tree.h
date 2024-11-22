@@ -233,7 +233,8 @@ class Tree
         }
 
 };
-
+*/
+/*
 void Tree::insert(TreeNode *&nodePtr, TreeNode *&newNode) //insert node and search branches
 {
     if(nodePtr == NULL)
