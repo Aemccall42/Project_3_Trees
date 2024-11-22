@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "Tree.h"
 
 using namespace std;
@@ -17,11 +18,12 @@ cout << " ######   ####   ####  #    #   #     #    #     # ###### #    #    #\n
 }
 
 void displayMenu() {
+    cout << "\n\n\nWelcome Bounty Hunter! \nWould you Like to get started?\n\n";
     cout << "1. Add Bounty\n";
     cout << "2. Display Bounties\n";
     cout << "3. Search for Bounty\n";
     cout << "4. Exit\n";
-    cout << "Choose an option: ";
+    cout << "\nChoose an option: ";
 }
 
 int main() {
@@ -43,17 +45,25 @@ int main() {
                 string bodyMark;
 
                 cout << "Enter Name: ";
-                cin >> name;
+                //cin >> name;
+                cin.ignore();
+                getline(cin, name);
                 cout << "Enter Age: ";
                 cin >> age;
                 cout << "Enter Eye Color: ";
                 cin >> eyeColor;
                 cout << "Enter Build: ";
-                cin >> build;
+                //cin >> build;
+                cin.ignore();
+                getline(cin, build);
                 cout << "Enter any Body Mark: ";
-                cin >> bodyMark;
+                //cin >> bodyMark;
+                cin.ignore();
+                getline(cin, name);
                 cout << "Enter City: ";
-                cin >> city;
+                //cin >> city;
+                cin.ignore();
+                getline(cin, name);
 
                 // Create a new bounty and insert it into the tree
                 Bounty newBounty(name, age, eyeColor, build, bodyMark, city);
@@ -69,7 +79,9 @@ int main() {
             case 3: {                           //Search for Bounty
                 string name;
                 cout << "Enter Name to Search: ";
-                cin >> name;
+                cin.ignore();
+                getline(cin, name);
+                //cin >> name;
 
                 // Search for the bounty
                 TreeNode* result = bountyTree.search(name);

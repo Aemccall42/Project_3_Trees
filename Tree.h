@@ -31,7 +31,7 @@ public:
     // Constructor and Destructor
     Tree();
     ~Tree();
- // Public methods
+    // Public methods
     void insert(const Bounty& bounty);
     void displayInOrder() const;
     TreeNode* search(const string& name) const;  // Change to return TreeNode*
@@ -233,6 +233,7 @@ class Tree
         }
 
 };
+*/
 /*
 void Tree::insert(TreeNode *&nodePtr, TreeNode *&newNode) //insert node and search branches
 {
